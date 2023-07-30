@@ -1,0 +1,33 @@
+.align-centre{
+    text-align:center;
+}
+
+.alignjustify{
+    text-align:justify;
+}
+
+.darken20 {
+    filter: brightness(20%);
+ }
+
+.break-overflow{
+    overflow-wrap:break-word;
+}
+
+.iblock{
+    display:inline-block;
+}
+
+.width50per{
+    max-width:50%;
+    overflow:hidden;
+}
+
+.rounded-corner{
+    border-radius: 5px;
+}
+
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:4%;
+}

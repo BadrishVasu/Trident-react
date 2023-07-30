@@ -1,0 +1,15 @@
+#quotebg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)), 
+    url('../assets/aboutpics/0.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#ambitious{
+    margin-left:10%;
+    margin-right:10%;
+    padding:10px 0 10px 0;
+    background-color: rgb(245, 245, 245);
+}
