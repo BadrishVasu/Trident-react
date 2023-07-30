@@ -10,8 +10,9 @@ function App() {
 
   return (
     <>
+      
+      <NavBar>
       <Router>
-        <NavBar />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
@@ -19,6 +20,7 @@ function App() {
           <Route path='/contact-us' component={ContactUs} />
         </Switch>
       </Router>
+      </NavBar>
 
       <div>
         <a href="https://vitejs.dev" target="_blank">
