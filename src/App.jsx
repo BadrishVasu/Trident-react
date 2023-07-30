@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import NavBar from './components/navbar';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css'
 
 function App() {
@@ -8,6 +10,16 @@ function App() {
 
   return (
     <>
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/sheeps' component={Sheeps} />
+          <Route path='/contact-us' component={ContactUs} />
+        </Switch>
+      </Router>
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
