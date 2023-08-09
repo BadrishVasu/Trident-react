@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from '../pages/about'
 import Home from '../pages/home'
+import Logo from '/src/logo/77628.png'
+import './navbar.css'
 import {
   Nav,
   NavLink,
@@ -12,12 +14,14 @@ import {
 } from './NavbarElements';
   
 const Navbar = () => {
-  const activeStyle = { color: 'blue' };
+  const activeStyle = { color: 'red' };
   return (
     <>
       <Router>
       <Nav>
-
+        <a href = "www.tridentd3d.com">
+          <img id="logo" src={Logo}/>
+        </a>
         <Bars />
   
         <NavMenu>
@@ -50,8 +54,8 @@ const Navbar = () => {
 
       
           <Routes>
-            <Route path='/' component={Home} />
-            <Route path='/about' component={Home} />
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<Home />} />
           </Routes>
       </Router>
     </>
