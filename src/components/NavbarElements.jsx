@@ -1,10 +1,9 @@
-import { FaBars } from 'react-icons/fa';
-import { NavLink as Link } from 'react-router-dom';
-import styled from 'styled-components';
+import { FaBars } from 'react-icons/fa'
+import { NavLink as Link } from 'react-router-dom'
+import styled from 'styled-components'
   
 export const Nav = styled.nav`
   background: #63D471;
-  height: 85px;
   display: flex;
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1000px) / 2);
@@ -42,6 +41,7 @@ export const Bars = styled(FaBars)`
   
 export const NavMenu = styled.div`
   display: flex;
+  float:right;
   align-items: center;
   margin-right: -24px;
   /* Second Nav */
